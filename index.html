@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+            background-color: rgb(148, 10, 217);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .required{
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="myForm">
+            <label for="name">name</label>
+            <input type="text" name="username" class="form-control" id="name" size="50">
+            <p id="nameErr" class="required"></p>
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" id="email" size="50">
+            <p id="emailErr" class="required"></p>
+            <div class="mb-3">
+                <label for="status">Working Status</label>
+                <select id="status" class="form-control">
+                    <option value="Active" selected>Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <h6>Gender</h6>
+                <input type="radio" id="genderMale" value="Male" name="gender" checked>
+                <label for="genderMale">Male</label>
+                <input type="radio" id="genderFemale" value="Female" name="gender">
+                <label for="genderFemale">Female</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+<script src="script.js"></script> 
+</body>
+</html>
