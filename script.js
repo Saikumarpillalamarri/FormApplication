@@ -5,7 +5,7 @@ let nameErr = document.getElementById("nameErr");
 let emailErr = document.getElementById("emailErr");
 
 let formEl = document.getElementById("myForm");
-‎
+
 formEl.addEventListener("submit",function(event){
     event.preventDefault();
     submitFormData(formData);
